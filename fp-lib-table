@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name to252-5)(type Legacy)(uri "$(KIPRJMOD)/lib/to252-5.mod")(options "")(descr ""))
+  (lib (name misc)(type KiCad)(uri "$(KIPRJMOD)/lib/misc.pretty")(options "")(descr ""))
 )
