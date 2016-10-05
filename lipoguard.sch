@@ -298,17 +298,6 @@ F 3 "" H 7250 3900 30  0000 C CNN
 $EndComp
 Wire Wire Line
 	6900 3900 7000 3900
-$Comp
-L POT RV1
-U 1 1 57F26A5C
-P 8200 3900
-F 0 "RV1" V 8246 3817 50  0000 R CNN
-F 1 "10k" V 8154 3817 50  0000 R CNN
-F 2 "misc:trimmer1" H 8200 3900 60  0001 C CNN
-F 3 "" H 8200 3900 60  0000 C CNN
-	1    8200 3900
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	7500 3900 8050 3900
 Wire Wire Line
@@ -324,8 +313,6 @@ F 3 "" H 8200 5350 60  0000 C CNN
 	1    8200 5350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8200 3650 8200 2450
 $Comp
 L VCC #PWR011
 U 1 1 57F26BA7
@@ -364,4 +351,32 @@ F 3 "" H 7750 5350 60  0001 C CNN
 	1    7750 5350
 	1    0    0    -1  
 $EndComp
+$Comp
+L POT RV1
+U 1 1 57F26A5C
+P 8200 3900
+F 0 "RV1" V 8246 3817 50  0000 R CNN
+F 1 "5k" V 8154 3817 50  0000 R CNN
+F 2 "misc:trimmer1" H 8200 3900 60  0001 C CNN
+F 3 "" H 8200 3900 60  0000 C CNN
+	1    8200 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R5
+U 1 1 57F56FF8
+P 8200 3100
+F 0 "R5" V 8280 3100 40  0000 C CNN
+F 1 "10k" V 8207 3101 40  0000 C CNN
+F 2 "libcms:SM0603" V 8130 3100 30  0001 C CNN
+F 3 "" H 8200 3100 30  0000 C CNN
+	1    8200 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3650 8200 3350
+Wire Wire Line
+	8200 2850 8200 2450
+Text Notes 8400 3250 0    60   ~ 0
+Use:\n10k for LiPo/Li-Ion\n4.7K for Lead\n0 for Nimh
 $EndSCHEMATC
