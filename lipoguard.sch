@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:lipoguard-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -71,20 +72,12 @@ L R R3
 U 1 1 57E2E0BA
 P 5900 4450
 F 0 "R3" H 5971 4489 40  0000 L CNN
-F 1 "R" H 5971 4411 40  0000 L CNN
+F 1 "1k" H 5971 4411 40  0000 L CNN
 F 2 "libcms:SM0603" V 5830 4450 30  0001 C CNN
 F 3 "" H 5900 4450 30  0000 C CNN
 	1    5900 4450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5900 4050 5900 4200
-Wire Wire Line
-	5900 5350 5900 4700
-Wire Wire Line
-	4700 3650 4600 3650
-Wire Wire Line
-	4600 3650 4600 2450
 $Comp
 L VCC #PWR02
 U 1 1 57E2E14D
@@ -107,16 +100,6 @@ F 3 "" H 3250 4150 60  0000 C CNN
 	1    3250 4150
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4700 3950 4600 3950
-Wire Wire Line
-	4600 3950 4600 4200
-Wire Wire Line
-	3600 4050 4700 4050
-Wire Wire Line
-	3600 4250 3850 4250
-Wire Wire Line
-	3850 4250 3850 5350
 $Comp
 L GND #PWR03
 U 1 1 57E2E353
@@ -128,13 +111,12 @@ F 3 "" H 3850 5350 60  0000 C CNN
 	1    3850 5350
 	1    0    0    -1  
 $EndComp
-Connection ~ 4600 4050
 $Comp
 L R R2
 U 1 1 57E2E5E3
 P 4600 4450
 F 0 "R2" H 4671 4489 40  0000 L CNN
-F 1 "R" H 4671 4411 40  0000 L CNN
+F 1 "1k" H 4671 4411 40  0000 L CNN
 F 2 "libcms:SM0603" V 4530 4450 30  0001 C CNN
 F 3 "" H 4600 4450 30  0000 C CNN
 	1    4600 4450
@@ -151,8 +133,6 @@ F 3 "" H 4600 5000 60  0000 C CNN
 	1    4600 5000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4600 4700 4600 4800
 $Comp
 L GND #PWR04
 U 1 1 57E2E82E
@@ -164,8 +144,6 @@ F 3 "" H 4600 5350 60  0000 C CNN
 	1    4600 5350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4600 5350 4600 5200
 $Comp
 L VCC #PWR05
 U 1 1 57E2F4D3
@@ -182,7 +160,7 @@ L R R1
 U 1 1 57E2F4FB
 P 4050 2800
 F 0 "R1" H 4121 2839 40  0000 L CNN
-F 1 "R" H 4121 2761 40  0000 L CNN
+F 1 "1k" H 4121 2761 40  0000 L CNN
 F 2 "libcms:SM0603" V 3980 2800 30  0001 C CNN
 F 3 "" H 4050 2800 30  0000 C CNN
 	1    4050 2800
@@ -210,12 +188,6 @@ F 3 "" H 4050 3650 60  0000 C CNN
 	1    4050 3650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4050 2450 4050 2550
-Wire Wire Line
-	4050 3050 4050 3150
-Wire Wire Line
-	4050 3650 4050 3550
 $Comp
 L CONN_2 P1
 U 1 1 57E30469
@@ -227,14 +199,6 @@ F 3 "" H 3250 3050 60  0000 C CNN
 	1    3250 3050
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	3600 2950 3650 2950
-Wire Wire Line
-	3650 2950 3650 2450
-Wire Wire Line
-	3600 3150 3650 3150
-Wire Wire Line
-	3650 3150 3650 3650
 $Comp
 L GND #PWR07
 U 1 1 57E30655
@@ -268,12 +232,6 @@ F 3 "" H 6700 3900 60  0000 C CNN
 	1    6700 3900
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	6600 3650 6600 3700
-Wire Wire Line
-	5900 3650 6600 3650
-Wire Wire Line
-	6600 4100 6600 5350
 $Comp
 L GND #PWR09
 U 1 1 57F26963
@@ -296,12 +254,6 @@ F 3 "" H 7250 3900 30  0000 C CNN
 	1    7250 3900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6900 3900 7000 3900
-Wire Wire Line
-	7500 3900 8050 3900
-Wire Wire Line
-	8200 4150 8200 5350
 $Comp
 L GND #PWR010
 U 1 1 57F26B56
@@ -335,11 +287,6 @@ F 3 "" H 7750 4450 60  0000 C CNN
 	1    7750 4450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7750 4250 7750 3900
-Connection ~ 7750 3900
-Wire Wire Line
-	7750 4650 7750 5350
 $Comp
 L GND #PWR012
 U 1 1 57F3D38A
@@ -373,10 +320,64 @@ F 3 "" H 8200 3100 30  0000 C CNN
 	1    8200 3100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8200 3650 8200 3350
-Wire Wire Line
-	8200 2850 8200 2450
 Text Notes 8400 3250 0    60   ~ 0
 Use:\n10k for LiPo/Li-Ion\n4.7K for Lead\n0 for Nimh
+Wire Wire Line
+	5900 4050 5900 4300
+Wire Wire Line
+	5900 4600 5900 5350
+Wire Wire Line
+	4700 3650 4600 3650
+Wire Wire Line
+	4600 3650 4600 2450
+Wire Wire Line
+	4700 3950 4600 3950
+Wire Wire Line
+	4600 3950 4600 4300
+Wire Wire Line
+	3600 4050 4700 4050
+Wire Wire Line
+	3600 4250 3850 4250
+Wire Wire Line
+	3850 4250 3850 5350
+Connection ~ 4600 4050
+Wire Wire Line
+	4600 4600 4600 4800
+Wire Wire Line
+	4600 5350 4600 5200
+Wire Wire Line
+	4050 2450 4050 2650
+Wire Wire Line
+	4050 2950 4050 3150
+Wire Wire Line
+	4050 3650 4050 3550
+Wire Wire Line
+	3600 2950 3650 2950
+Wire Wire Line
+	3650 2950 3650 2450
+Wire Wire Line
+	3600 3150 3650 3150
+Wire Wire Line
+	3650 3150 3650 3650
+Wire Wire Line
+	6600 3650 6600 3700
+Wire Wire Line
+	5900 3650 6600 3650
+Wire Wire Line
+	6600 4100 6600 5350
+Wire Wire Line
+	6900 3900 7100 3900
+Wire Wire Line
+	7400 3900 8050 3900
+Wire Wire Line
+	8200 4050 8200 5350
+Wire Wire Line
+	7750 3900 7750 4300
+Connection ~ 7750 3900
+Wire Wire Line
+	7750 4600 7750 5350
+Wire Wire Line
+	8200 3250 8200 3750
+Wire Wire Line
+	8200 2450 8200 2950
 $EndSCHEMATC
